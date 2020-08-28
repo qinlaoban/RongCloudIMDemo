@@ -14,6 +14,7 @@
 + (void)getConversationList {
     
    NSArray *conversationList = [[RCIMClient sharedRCIMClient] getConversationList:@[@(ConversationType_PRIVATE)]];
+    
     NSLog(@"conversationList:%@",[conversationList modelToJSONString]);
 }
 
