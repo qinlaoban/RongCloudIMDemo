@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-RongCloudIMDemo/Pods-RongCloudIMDemo-resources.sh
+${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle
+${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj
+${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj
+${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist
+${PODS_ROOT}/RongCloudIM/RongCloudIM/RCColor.plist
+${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist
+${PODS_ROOT}/RongCloudIM/RongCloudIM/RongSticker.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle

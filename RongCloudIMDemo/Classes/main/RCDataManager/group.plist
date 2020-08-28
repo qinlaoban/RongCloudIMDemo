@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>groupId</key>
+		<string>G1001</string>
+		<key>groupName</key>
+		<string>人海浮沉交流群</string>
+		<key>ids</key>
+		<array>
+			<string>1001</string>
+			<string>1002</string>
+			<string>1003</string>
+			<string>1004</string>
+			<string>1005</string>
+		</array>
+		<key>portraitUri</key>
+		<string>https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1930729313,2110925012&amp;fm=26&amp;gp=0.jpg</string>
+	</dict>
+</array>
+</plist>
