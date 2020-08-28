@@ -52,8 +52,7 @@
                                                object:nil];
     
 }
-//30001 30003
-// 20604
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -65,8 +64,7 @@
     
     [self registerCustomCell];
     
-    self.chatSessionInputBarControl.recordButton.
-  //  self.chatSessionInputBarControl.userInteractionEnabled = NO;
+
     
 }
 #pragma mark - pluginBoardView
