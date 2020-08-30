@@ -4,7 +4,7 @@
 ## 用前须知
 
 ### 替换自己的appkey,contacts.plist 模拟用户需要自己去注册
-### 指定pod update pod install
+### pod repo update pod install
 
 - 项目是依据IMKit构建的快速开发页面，如果需要高度自定义的可使用IMClient
 
