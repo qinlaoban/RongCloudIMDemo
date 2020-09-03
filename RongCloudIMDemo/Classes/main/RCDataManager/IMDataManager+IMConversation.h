@@ -11,6 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IMDataManager (IMConversation)
+
+
+/// test
+@property (nonatomic,strong) NSString *testName;
+
+
+
 /// 获取最后消息
 + (void)getLastMessage:(NSString *)messageId;
 

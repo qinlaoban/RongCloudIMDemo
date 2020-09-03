@@ -20,7 +20,9 @@
     [super viewDidLoad];
     
     self.title = @"聊天室 ";
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"room"];
+    
 }
 
 #pragma mark - Table view data source
@@ -37,7 +39,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"room" forIndexPath:indexPath];
     
     cell.textLabel.text =@"我的聊天室";
-    
+
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

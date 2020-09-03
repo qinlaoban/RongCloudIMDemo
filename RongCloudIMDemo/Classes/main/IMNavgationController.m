@@ -46,6 +46,12 @@
     [super pushViewController:viewController animated:animated];
     
 }
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
+    
+        NSLog(@"self.presentingViewController.className:%@",self.presentingViewController.className);
+    
+    [super dismissViewControllerAnimated:flag completion:completion];
+}
 - (void)goBack {
     [self popViewControllerAnimated:YES];
 }

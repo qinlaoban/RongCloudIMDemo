@@ -28,11 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)getCurrentUserId;
 /// 获取一些视频信息
 +(void)getAVInfo;
-
+/// 获取本地消息
 + (void)getHistoryMessages:(RCConversationType)conversationType
        targetId:(NSString *)targetId
 oldestMessageId:(long)oldestMessageId
           count:(int)count;
+/// 断开连接，退出登录
++ (void)disConneRCServer ;
 
 
 @end

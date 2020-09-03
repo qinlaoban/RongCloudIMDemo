@@ -17,8 +17,8 @@
 #import "IMChatRommController.h"
 #import "IMIssueController.h"
 
-#import "IMCustomConversationController.h"
-#import "WMConversationListViewController.h"
+
+
 @interface IMRootTabbarViewController ()
 
 @end
@@ -56,11 +56,6 @@
      
     IMConversationListViewController *imConversationListVC = [[IMConversationListViewController alloc]init];
     [self addMyChildViewControllers:imConversationListVC title:@"会话列表" image:@"speech_recognition_22x22_" selectedImage:@"speech_recognition_selected_22x22_"];
-    
-    
-    WMConversationListViewController *wcConversationListVC = [[WMConversationListViewController alloc]init];
-    [self addMyChildViewControllers:wcConversationListVC title:@"自定义会话列表" image:@"speech_recognition_22x22_" selectedImage:@"speech_recognition_selected_22x22_"];
-    
 
     IMContactViewController *FriendsListVC = [[IMContactViewController alloc]init];
      [self addMyChildViewControllers:FriendsListVC title:@"通讯录" image:@"dictionary_22x22_" selectedImage:@"dictionary_selected_22x22_"];

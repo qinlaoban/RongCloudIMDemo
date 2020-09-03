@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		62E00666C92EEE18B1C16870 /* libPods-RongCloudIMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFA28C185FBE0C3BFF169D4 /* libPods-RongCloudIMDemo.a */; };
-		83170490DF46128157671C4A /* libPods-RongCloudIMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFA28C185FBE0C3BFF169D4 /* libPods-RongCloudIMDemo.a */; };
 		D60DFD0624D934DB00B9F1D3 /* group.plist in Resources */ = {isa = PBXBuildFile; fileRef = D60DFD0524D934DB00B9F1D3 /* group.plist */; };
 		D619344524ED029B0000A23C /* IMIssue.m in Sources */ = {isa = PBXBuildFile; fileRef = D619344424ED029B0000A23C /* IMIssue.m */; };
 		D61C729624CFFD2200BED1CF /* AppDelegate+IM.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C729524CFFD2200BED1CF /* AppDelegate+IM.m */; };
@@ -17,24 +16,15 @@
 		D623A47824E3E9EB00821194 /* IMConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D623A47624E3E9E900821194 /* IMConversationViewController.m */; };
 		D623A47A24E3EBB500821194 /* 小黄人.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D623A47924E3EBB500821194 /* 小黄人.jpg */; };
 		D62A0EFB24D2B57600BA01F7 /* IMChatRoomConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62A0EFA24D2B57600BA01F7 /* IMChatRoomConversationController.m */; };
+		D638BDBB2500D91400EF1B94 /* RCGroup+IMGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D638BDBA2500D91400EF1B94 /* RCGroup+IMGroup.m */; };
 		D66B190224CDB9F0008E0905 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D66B18DA24CDB7FB008E0905 /* test.mp4 */; };
 		D66B190324CDB9F0008E0905 /* fireworks.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = D66B18D924CDB721008E0905 /* fireworks.MP4 */; };
 		D66B190624CE7530008E0905 /* IMConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B190524CE7530008E0905 /* IMConversationListViewController.m */; };
 		D683517124D9664100911A77 /* IMIssueController.m in Sources */ = {isa = PBXBuildFile; fileRef = D683517024D9664100911A77 /* IMIssueController.m */; };
 		D694ACDD24F3C98B000486F8 /* IMGovernmentConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D694ACDC24F3C98B000486F8 /* IMGovernmentConversationCell.m */; };
-		D694ACE024F3CA71000486F8 /* IMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D694ACDF24F3CA71000486F8 /* IMTestViewController.m */; };
 		D6A041AD24F4C642001C702D /* IMSpecialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041AC24F4C642001C702D /* IMSpecialCell.m */; };
 		D6A041B024F66DB7001C702D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A041AF24F66DB6001C702D /* AVFoundation.framework */; };
 		D6A041BB24F78936001C702D /* IMVideoMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041BA24F78936001C702D /* IMVideoMessageContent.m */; };
-		D6A041C924F7AB44001C702D /* WMConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041C824F7AB44001C702D /* WMConversationListViewController.m */; };
-		D6A041CC24F7AB9C001C702D /* RCCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041CB24F7AB9C001C702D /* RCCustomCell.m */; };
-		D6A041D724F7ACFE001C702D /* PPDragDropBadgeView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6A041CF24F7ACFE001C702D /* PPDragDropBadgeView.bundle */; };
-		D6A041D824F7ACFE001C702D /* PRTweenTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041D424F7ACFE001C702D /* PRTweenTimingFunctions.m */; };
-		D6A041D924F7ACFE001C702D /* PRTween.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041D524F7ACFE001C702D /* PRTween.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D6A041DA24F7ACFE001C702D /* PPDragDropBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041D624F7ACFE001C702D /* PPDragDropBadgeView.m */; };
-		D6A041E224F7AE6A001C702D /* WMVideoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041DC24F7AE6A001C702D /* WMVideoMessage.m */; };
-		D6A041E324F7AE6A001C702D /* WMVideoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041DD24F7AE6A001C702D /* WMVideoMessageCell.m */; };
-		D6A041E424F7AE6A001C702D /* WMConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A041E124F7AE6A001C702D /* WMConversationViewController.m */; };
 		D6AF9C4524CC7F33004343B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF9C3524CC7F2F004343B2 /* AppDelegate.m */; };
 		D6AF9C4624CC7F33004343B2 /* IMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF9C3724CC7F30004343B2 /* IMLoginViewController.m */; };
 		D6AF9C4824CC7F33004343B2 /* IMContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF9C3A24CC7F31004343B2 /* IMContactViewController.m */; };
@@ -50,22 +40,6 @@
 		D6AF9CCC24CC8576004343B2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AF9CCB24CC8576004343B2 /* Launch Screen.storyboard */; };
 		D6AF9CF924CD6821004343B2 /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF9CF624CD6820004343B2 /* ContactCell.m */; };
 		D6AF9CFA24CD6821004343B2 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AF9CF724CD6821004343B2 /* ContactCell.xib */; };
-		D6B5C65824F7C30F004148B1 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C63B24F7C30E004148B1 /* TZImageCropManager.m */; };
-		D6B5C65924F7C30F004148B1 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C63D24F7C30E004148B1 /* TZAssetCell.m */; };
-		D6B5C65A24F7C30F004148B1 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C63E24F7C30E004148B1 /* TZVideoPlayerController.m */; };
-		D6B5C65B24F7C30F004148B1 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C63F24F7C30E004148B1 /* TZAssetModel.m */; };
-		D6B5C65C24F7C30F004148B1 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64024F7C30E004148B1 /* NSBundle+TZImagePicker.m */; };
-		D6B5C65D24F7C30F004148B1 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64324F7C30F004148B1 /* UIView+Layout.m */; };
-		D6B5C65E24F7C30F004148B1 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64424F7C30F004148B1 /* TZPhotoPreviewController.m */; };
-		D6B5C65F24F7C30F004148B1 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6B5C64524F7C30F004148B1 /* TZImagePickerController.bundle */; };
-		D6B5C66024F7C30F004148B1 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64624F7C30F004148B1 /* TZProgressView.m */; };
-		D6B5C66124F7C30F004148B1 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64A24F7C30F004148B1 /* TZImageManager.m */; };
-		D6B5C66224F7C30F004148B1 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64C24F7C30F004148B1 /* TZPhotoPickerController.m */; };
-		D6B5C66324F7C30F004148B1 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C64D24F7C30F004148B1 /* TZPhotoPreviewCell.m */; };
-		D6B5C66424F7C30F004148B1 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C65324F7C30F004148B1 /* TZImagePickerController.m */; };
-		D6B5C66524F7C30F004148B1 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C65424F7C30F004148B1 /* TZLocationManager.m */; };
-		D6B5C66624F7C30F004148B1 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C65524F7C30F004148B1 /* TZGifPhotoPreviewController.m */; };
-		D6B5C66724F7C30F004148B1 /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C65624F7C30F004148B1 /* TZImageRequestOperation.m */; };
 		D6B5C66A24F8EA44004148B1 /* IMDataManager+IMConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B5C66924F8EA44004148B1 /* IMDataManager+IMConversation.m */; };
 		D6D591BB24E5160000A3DDC7 /* IM.txt in Resources */ = {isa = PBXBuildFile; fileRef = D6D591BA24E5160000A3DDC7 /* IM.txt */; };
 		D6DE2B4B24E1297F007502EA /* 遇见.wav in Resources */ = {isa = PBXBuildFile; fileRef = D6DE2B4A24E1297F007502EA /* 遇见.wav */; };
@@ -74,9 +48,21 @@
 		D6DE2B6324E2A1A2007502EA /* PersonCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DE2B6124E2A1A2007502EA /* PersonCenterViewController.m */; };
 		D6DE2B6624E3C957007502EA /* IMNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DE2B6524E3C957007502EA /* IMNavgationController.m */; };
 		D6FB69AE24EE6ABD0052048D /* haha.gif in Resources */ = {isa = PBXBuildFile; fileRef = D6FB69AD24EE6ABD0052048D /* haha.gif */; };
-		D6FB69B524EFCBF40052048D /* IMCustomConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FB69B424EFCBF40052048D /* IMCustomConversationController.m */; };
 		D6FB69B824EFCD150052048D /* IMCustomConverListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FB69B724EFCD150052048D /* IMCustomConverListCell.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D638BD3E24FE355D00EF1B94 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08E6F62C1E663D52F2DFC166 /* Pods-RongCloudIMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudIMDemo.release.xcconfig"; path = "Target Support Files/Pods-RongCloudIMDemo/Pods-RongCloudIMDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +81,11 @@
 		D623A47924E3EBB500821194 /* 小黄人.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "小黄人.jpg"; sourceTree = "<group>"; };
 		D62A0EF924D2B57600BA01F7 /* IMChatRoomConversationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMChatRoomConversationController.h; sourceTree = "<group>"; };
 		D62A0EFA24D2B57600BA01F7 /* IMChatRoomConversationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMChatRoomConversationController.m; sourceTree = "<group>"; };
+		D638BD2F24FE355D00EF1B94 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D638BD3124FE355D00EF1B94 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D638BD8124FE5BD400EF1B94 /* IMNotifationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMNotifationCenter.h; sourceTree = "<group>"; };
+		D638BDB92500D91400EF1B94 /* RCGroup+IMGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCGroup+IMGroup.h"; sourceTree = "<group>"; };
+		D638BDBA2500D91400EF1B94 /* RCGroup+IMGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCGroup+IMGroup.m"; sourceTree = "<group>"; };
 		D66B18D924CDB721008E0905 /* fireworks.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fireworks.MP4; sourceTree = "<group>"; };
 		D66B18DA24CDB7FB008E0905 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		D66B190424CE7530008E0905 /* IMConversationListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMConversationListViewController.h; sourceTree = "<group>"; };
@@ -103,31 +94,12 @@
 		D683517024D9664100911A77 /* IMIssueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMIssueController.m; sourceTree = "<group>"; };
 		D694ACDB24F3C98B000486F8 /* IMGovernmentConversationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMGovernmentConversationCell.h; sourceTree = "<group>"; };
 		D694ACDC24F3C98B000486F8 /* IMGovernmentConversationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMGovernmentConversationCell.m; sourceTree = "<group>"; };
-		D694ACDE24F3CA71000486F8 /* IMTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMTestViewController.h; sourceTree = "<group>"; };
-		D694ACDF24F3CA71000486F8 /* IMTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMTestViewController.m; sourceTree = "<group>"; };
 		D6A041A924F4B47D001C702D /* issus.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = issus.md; sourceTree = "<group>"; };
 		D6A041AB24F4C642001C702D /* IMSpecialCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMSpecialCell.h; sourceTree = "<group>"; };
 		D6A041AC24F4C642001C702D /* IMSpecialCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMSpecialCell.m; sourceTree = "<group>"; };
 		D6A041AF24F66DB6001C702D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D6A041B924F78936001C702D /* IMVideoMessageContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMVideoMessageContent.h; sourceTree = "<group>"; };
 		D6A041BA24F78936001C702D /* IMVideoMessageContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMVideoMessageContent.m; sourceTree = "<group>"; };
-		D6A041C724F7AB43001C702D /* WMConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMConversationListViewController.h; sourceTree = "<group>"; };
-		D6A041C824F7AB44001C702D /* WMConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMConversationListViewController.m; sourceTree = "<group>"; };
-		D6A041CA24F7AB9C001C702D /* RCCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCustomCell.h; sourceTree = "<group>"; };
-		D6A041CB24F7AB9C001C702D /* RCCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCustomCell.m; sourceTree = "<group>"; };
-		D6A041CF24F7ACFE001C702D /* PPDragDropBadgeView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PPDragDropBadgeView.bundle; sourceTree = "<group>"; };
-		D6A041D024F7ACFE001C702D /* PPDragDropBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDragDropBadgeView.h; sourceTree = "<group>"; };
-		D6A041D224F7ACFE001C702D /* PRTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTween.h; sourceTree = "<group>"; };
-		D6A041D324F7ACFE001C702D /* PRTweenTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRTweenTimingFunctions.h; sourceTree = "<group>"; };
-		D6A041D424F7ACFE001C702D /* PRTweenTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTweenTimingFunctions.m; sourceTree = "<group>"; };
-		D6A041D524F7ACFE001C702D /* PRTween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRTween.m; sourceTree = "<group>"; };
-		D6A041D624F7ACFE001C702D /* PPDragDropBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDragDropBadgeView.m; sourceTree = "<group>"; };
-		D6A041DC24F7AE6A001C702D /* WMVideoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVideoMessage.m; sourceTree = "<group>"; };
-		D6A041DD24F7AE6A001C702D /* WMVideoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVideoMessageCell.m; sourceTree = "<group>"; };
-		D6A041DE24F7AE6A001C702D /* WMConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMConversationViewController.h; sourceTree = "<group>"; };
-		D6A041DF24F7AE6A001C702D /* WMVideoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoMessageCell.h; sourceTree = "<group>"; };
-		D6A041E024F7AE6A001C702D /* WMVideoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoMessage.h; sourceTree = "<group>"; };
-		D6A041E124F7AE6A001C702D /* WMConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMConversationViewController.m; sourceTree = "<group>"; };
 		D6AF9C3524CC7F2F004343B2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D6AF9C3624CC7F30004343B2 /* IMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMLoginViewController.h; sourceTree = "<group>"; };
 		D6AF9C3724CC7F30004343B2 /* IMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLoginViewController.m; sourceTree = "<group>"; };
@@ -155,37 +127,6 @@
 		D6AF9CF624CD6820004343B2 /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
 		D6AF9CF724CD6821004343B2 /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		D6AF9CF824CD6821004343B2 /* ContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCell.h; sourceTree = "<group>"; };
-		D6B5C63924F7C30E004148B1 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
-		D6B5C63A24F7C30E004148B1 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
-		D6B5C63B24F7C30E004148B1 /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
-		D6B5C63C24F7C30E004148B1 /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
-		D6B5C63D24F7C30E004148B1 /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
-		D6B5C63E24F7C30E004148B1 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
-		D6B5C63F24F7C30E004148B1 /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
-		D6B5C64024F7C30E004148B1 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
-		D6B5C64124F7C30E004148B1 /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
-		D6B5C64224F7C30E004148B1 /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
-		D6B5C64324F7C30F004148B1 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
-		D6B5C64424F7C30F004148B1 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
-		D6B5C64524F7C30F004148B1 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
-		D6B5C64624F7C30F004148B1 /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
-		D6B5C64724F7C30F004148B1 /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
-		D6B5C64824F7C30F004148B1 /* TZImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageRequestOperation.h; sourceTree = "<group>"; };
-		D6B5C64924F7C30F004148B1 /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
-		D6B5C64A24F7C30F004148B1 /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
-		D6B5C64B24F7C30F004148B1 /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
-		D6B5C64C24F7C30F004148B1 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
-		D6B5C64D24F7C30F004148B1 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
-		D6B5C64E24F7C30F004148B1 /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
-		D6B5C64F24F7C30F004148B1 /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
-		D6B5C65024F7C30F004148B1 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
-		D6B5C65124F7C30F004148B1 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
-		D6B5C65224F7C30F004148B1 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		D6B5C65324F7C30F004148B1 /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
-		D6B5C65424F7C30F004148B1 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
-		D6B5C65524F7C30F004148B1 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
-		D6B5C65624F7C30F004148B1 /* TZImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageRequestOperation.m; sourceTree = "<group>"; };
-		D6B5C65724F7C30F004148B1 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		D6B5C66824F8EA44004148B1 /* IMDataManager+IMConversation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMDataManager+IMConversation.h"; sourceTree = "<group>"; };
 		D6B5C66924F8EA44004148B1 /* IMDataManager+IMConversation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IMDataManager+IMConversation.m"; sourceTree = "<group>"; };
 		D6B8CD04247276FF001B9246 /* RongCloudIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,8 +139,6 @@
 		D6DE2B6124E2A1A2007502EA /* PersonCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCenterViewController.m; sourceTree = "<group>"; };
 		D6DE2B6524E3C957007502EA /* IMNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNavgationController.m; sourceTree = "<group>"; };
 		D6FB69AD24EE6ABD0052048D /* haha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = haha.gif; sourceTree = "<group>"; };
-		D6FB69B324EFCBF40052048D /* IMCustomConversationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMCustomConversationController.h; sourceTree = "<group>"; };
-		D6FB69B424EFCBF40052048D /* IMCustomConversationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMCustomConversationController.m; sourceTree = "<group>"; };
 		D6FB69B624EFCD150052048D /* IMCustomConverListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMCustomConverListCell.h; sourceTree = "<group>"; };
 		D6FB69B724EFCD150052048D /* IMCustomConverListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMCustomConverListCell.m; sourceTree = "<group>"; };
 		F3E7D024EA70ED0F2E61D68E /* Pods-RongCloudIMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudIMDemo.debug.xcconfig"; path = "Target Support Files/Pods-RongCloudIMDemo/Pods-RongCloudIMDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -212,7 +151,6 @@
 			files = (
 				D6A041B024F66DB7001C702D /* AVFoundation.framework in Frameworks */,
 				62E00666C92EEE18B1C16870 /* libPods-RongCloudIMDemo.a in Frameworks */,
-				83170490DF46128157671C4A /* libPods-RongCloudIMDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +171,8 @@
 			children = (
 				D6A041AF24F66DB6001C702D /* AVFoundation.framework */,
 				1EFA28C185FBE0C3BFF169D4 /* libPods-RongCloudIMDemo.a */,
+				D638BD2F24FE355D00EF1B94 /* UserNotifications.framework */,
+				D638BD3124FE355D00EF1B94 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,46 +219,8 @@
 		D6A041CD24F7ACF6001C702D /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
-				D6B5C63824F7C30E004148B1 /* TZImagePickerController */,
-				D6A041DB24F7AE6A001C702D /* RCConversation */,
-				D6A041CE24F7ACFE001C702D /* PPDragDropBadgeView */,
 			);
 			path = 3rd;
-			sourceTree = "<group>";
-		};
-		D6A041CE24F7ACFE001C702D /* PPDragDropBadgeView */ = {
-			isa = PBXGroup;
-			children = (
-				D6A041CF24F7ACFE001C702D /* PPDragDropBadgeView.bundle */,
-				D6A041D024F7ACFE001C702D /* PPDragDropBadgeView.h */,
-				D6A041D124F7ACFE001C702D /* PRTween */,
-				D6A041D624F7ACFE001C702D /* PPDragDropBadgeView.m */,
-			);
-			path = PPDragDropBadgeView;
-			sourceTree = "<group>";
-		};
-		D6A041D124F7ACFE001C702D /* PRTween */ = {
-			isa = PBXGroup;
-			children = (
-				D6A041D224F7ACFE001C702D /* PRTween.h */,
-				D6A041D324F7ACFE001C702D /* PRTweenTimingFunctions.h */,
-				D6A041D424F7ACFE001C702D /* PRTweenTimingFunctions.m */,
-				D6A041D524F7ACFE001C702D /* PRTween.m */,
-			);
-			path = PRTween;
-			sourceTree = "<group>";
-		};
-		D6A041DB24F7AE6A001C702D /* RCConversation */ = {
-			isa = PBXGroup;
-			children = (
-				D6A041DC24F7AE6A001C702D /* WMVideoMessage.m */,
-				D6A041DD24F7AE6A001C702D /* WMVideoMessageCell.m */,
-				D6A041DE24F7AE6A001C702D /* WMConversationViewController.h */,
-				D6A041DF24F7AE6A001C702D /* WMVideoMessageCell.h */,
-				D6A041E024F7AE6A001C702D /* WMVideoMessage.h */,
-				D6A041E124F7AE6A001C702D /* WMConversationViewController.m */,
-			);
-			path = RCConversation;
 			sourceTree = "<group>";
 		};
 		D6AF9C2224CC7EFA004343B2 /* RongCloudIMDemo */ = {
@@ -338,10 +240,6 @@
 				D60DFD0A24D93C7000B9F1D3 /* model */,
 				D66B190424CE7530008E0905 /* IMConversationListViewController.h */,
 				D66B190524CE7530008E0905 /* IMConversationListViewController.m */,
-				D6FB69B324EFCBF40052048D /* IMCustomConversationController.h */,
-				D6FB69B424EFCBF40052048D /* IMCustomConversationController.m */,
-				D6A041C724F7AB43001C702D /* WMConversationListViewController.h */,
-				D6A041C824F7AB44001C702D /* WMConversationListViewController.m */,
 			);
 			path = conversationList;
 			sourceTree = "<group>";
@@ -399,6 +297,7 @@
 				D6AF9CD224CD64D7004343B2 /* main */,
 				D6AF9C3624CC7F30004343B2 /* IMLoginViewController.h */,
 				D6AF9C3724CC7F30004343B2 /* IMLoginViewController.m */,
+				D638BD8124FE5BD400EF1B94 /* IMNotifationCenter.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -428,8 +327,6 @@
 				D623A47624E3E9E900821194 /* IMConversationViewController.m */,
 				D623A47324E3E7C900821194 /* IMRCSettingViewController.h */,
 				D623A47424E3E7C900821194 /* IMRCSettingViewController.m */,
-				D694ACDE24F3CA71000486F8 /* IMTestViewController.h */,
-				D694ACDF24F3CA71000486F8 /* IMTestViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -437,8 +334,6 @@
 		D6AF9CD424CD6547004343B2 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				D6A041CA24F7AB9C001C702D /* RCCustomCell.h */,
-				D6A041CB24F7AB9C001C702D /* RCCustomCell.m */,
 				D6AF9C5324CC7F5F004343B2 /* RCCustomCell */,
 				D6FB69B624EFCD150052048D /* IMCustomConverListCell.h */,
 				D6FB69B724EFCD150052048D /* IMCustomConverListCell.m */,
@@ -497,47 +392,10 @@
 			children = (
 				D6AF9C6224CC7F60004343B2 /* RCUserInfo+Addition.h */,
 				D6AF9C6124CC7F60004343B2 /* RCUserInfo+Addition.m */,
+				D638BDB92500D91400EF1B94 /* RCGroup+IMGroup.h */,
+				D638BDBA2500D91400EF1B94 /* RCGroup+IMGroup.m */,
 			);
 			path = catecary;
-			sourceTree = "<group>";
-		};
-		D6B5C63824F7C30E004148B1 /* TZImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				D6B5C63924F7C30E004148B1 /* TZPhotoPreviewCell.h */,
-				D6B5C63A24F7C30E004148B1 /* TZPhotoPickerController.h */,
-				D6B5C63B24F7C30E004148B1 /* TZImageCropManager.m */,
-				D6B5C63C24F7C30E004148B1 /* TZImageManager.h */,
-				D6B5C63D24F7C30E004148B1 /* TZAssetCell.m */,
-				D6B5C63E24F7C30E004148B1 /* TZVideoPlayerController.m */,
-				D6B5C63F24F7C30E004148B1 /* TZAssetModel.m */,
-				D6B5C64024F7C30E004148B1 /* NSBundle+TZImagePicker.m */,
-				D6B5C64124F7C30E004148B1 /* TZLocationManager.h */,
-				D6B5C64224F7C30E004148B1 /* TZImagePickerController.h */,
-				D6B5C64324F7C30F004148B1 /* UIView+Layout.m */,
-				D6B5C64424F7C30F004148B1 /* TZPhotoPreviewController.m */,
-				D6B5C64524F7C30F004148B1 /* TZImagePickerController.bundle */,
-				D6B5C64624F7C30F004148B1 /* TZProgressView.m */,
-				D6B5C64724F7C30F004148B1 /* TZGifPhotoPreviewController.h */,
-				D6B5C64824F7C30F004148B1 /* TZImageRequestOperation.h */,
-				D6B5C64924F7C30F004148B1 /* TZAssetCell.h */,
-				D6B5C64A24F7C30F004148B1 /* TZImageManager.m */,
-				D6B5C64B24F7C30F004148B1 /* TZImageCropManager.h */,
-				D6B5C64C24F7C30F004148B1 /* TZPhotoPickerController.m */,
-				D6B5C64D24F7C30F004148B1 /* TZPhotoPreviewCell.m */,
-				D6B5C64E24F7C30F004148B1 /* NSBundle+TZImagePicker.h */,
-				D6B5C64F24F7C30F004148B1 /* TZAssetModel.h */,
-				D6B5C65024F7C30F004148B1 /* TZVideoPlayerController.h */,
-				D6B5C65124F7C30F004148B1 /* TZPhotoPreviewController.h */,
-				D6B5C65224F7C30F004148B1 /* UIView+Layout.h */,
-				D6B5C65324F7C30F004148B1 /* TZImagePickerController.m */,
-				D6B5C65424F7C30F004148B1 /* TZLocationManager.m */,
-				D6B5C65524F7C30F004148B1 /* TZGifPhotoPreviewController.m */,
-				D6B5C65624F7C30F004148B1 /* TZImageRequestOperation.m */,
-				D6B5C65724F7C30F004148B1 /* TZProgressView.h */,
-			);
-			name = TZImagePickerController;
-			path = "../../../../../../Downloads/TZImagePickerController-master/TZImagePickerController/TZImagePickerController";
 			sourceTree = "<group>";
 		};
 		D6B8CCFB247276FF001B9246 = {
@@ -570,6 +428,8 @@
 				D6B8CD01247276FF001B9246 /* Frameworks */,
 				D6B8CD02247276FF001B9246 /* Resources */,
 				60276F75C796F472A6EBBDF3 /* [CP] Copy Pods Resources */,
+				57948D484E1F27094FD9993C /* [CP] Embed Pods Frameworks */,
+				D638BD3E24FE355D00EF1B94 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -587,7 +447,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IM;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = qin;
 				TargetAttributes = {
 					D6B8CD03247276FF001B9246 = {
@@ -619,7 +479,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6FB69AE24EE6ABD0052048D /* haha.gif in Resources */,
-				D6A041D724F7ACFE001C702D /* PPDragDropBadgeView.bundle in Resources */,
 				D6DE2B4D24E12C37007502EA /* 录音1.wav in Resources */,
 				D6DE2B4B24E1297F007502EA /* 遇见.wav in Resources */,
 				D6D591BB24E5160000A3DDC7 /* IM.txt in Resources */,
@@ -630,7 +489,6 @@
 				D60DFD0624D934DB00B9F1D3 /* group.plist in Resources */,
 				D6AF9CC924CC849C004343B2 /* Images.xcassets in Resources */,
 				D623A47A24E3EBB500821194 /* 小黄人.jpg in Resources */,
-				D6B5C65F24F7C30F004148B1 /* TZImagePickerController.bundle in Resources */,
 				D6DE2B6224E2A1A2007502EA /* PersonCenterViewController.xib in Resources */,
 				D6AF9C7524CC7F61004343B2 /* contacts.plist in Resources */,
 			);
@@ -639,6 +497,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57948D484E1F27094FD9993C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RongCloudIMDemo/Pods-RongCloudIMDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RongCloudIMDemo/Pods-RongCloudIMDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RongCloudIMDemo/Pods-RongCloudIMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		60276F75C796F472A6EBBDF3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -686,41 +561,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D694ACDD24F3C98B000486F8 /* IMGovernmentConversationCell.m in Sources */,
-				D6B5C65E24F7C30F004148B1 /* TZPhotoPreviewController.m in Sources */,
-				D6A041E324F7AE6A001C702D /* WMVideoMessageCell.m in Sources */,
 				D6AF9C6D24CC7F61004343B2 /* IMGroupListViewController.m in Sources */,
 				D62A0EFB24D2B57600BA01F7 /* IMChatRoomConversationController.m in Sources */,
 				D61C729624CFFD2200BED1CF /* AppDelegate+IM.m in Sources */,
-				D6A041D924F7ACFE001C702D /* PRTween.m in Sources */,
-				D694ACE024F3CA71000486F8 /* IMTestViewController.m in Sources */,
-				D6B5C66024F7C30F004148B1 /* TZProgressView.m in Sources */,
 				D6AF9C6E24CC7F61004343B2 /* IMRCCustomMessage.m in Sources */,
 				D6AF9CF924CD6821004343B2 /* ContactCell.m in Sources */,
-				D6A041D824F7ACFE001C702D /* PRTweenTimingFunctions.m in Sources */,
-				D6B5C66624F7C30F004148B1 /* TZGifPhotoPreviewController.m in Sources */,
-				D6A041CC24F7AB9C001C702D /* RCCustomCell.m in Sources */,
-				D6B5C66324F7C30F004148B1 /* TZPhotoPreviewCell.m in Sources */,
-				D6B5C66724F7C30F004148B1 /* TZImageRequestOperation.m in Sources */,
 				D6AF9C6F24CC7F61004343B2 /* RCCustomMessageCell.m in Sources */,
+				D638BDBB2500D91400EF1B94 /* RCGroup+IMGroup.m in Sources */,
 				D6A041AD24F4C642001C702D /* IMSpecialCell.m in Sources */,
-				D6A041E424F7AE6A001C702D /* WMConversationViewController.m in Sources */,
 				D6AF9C4624CC7F33004343B2 /* IMLoginViewController.m in Sources */,
-				D6B5C65824F7C30F004148B1 /* TZImageCropManager.m in Sources */,
 				D623A47524E3E7C900821194 /* IMRCSettingViewController.m in Sources */,
 				D619344524ED029B0000A23C /* IMIssue.m in Sources */,
-				D6B5C66424F7C30F004148B1 /* TZImagePickerController.m in Sources */,
-				D6B5C65B24F7C30F004148B1 /* TZAssetModel.m in Sources */,
 				D61C729E24D1682000BED1CF /* IMChatRommController.m in Sources */,
 				D6AF9C7124CC7F61004343B2 /* RCUserInfo+Addition.m in Sources */,
-				D6A041DA24F7ACFE001C702D /* PPDragDropBadgeView.m in Sources */,
 				D6A041BB24F78936001C702D /* IMVideoMessageContent.m in Sources */,
 				D6AF9C7424CC7F61004343B2 /* IMDataManager.m in Sources */,
-				D6B5C65C24F7C30F004148B1 /* NSBundle+TZImagePicker.m in Sources */,
-				D6B5C65924F7C30F004148B1 /* TZAssetCell.m in Sources */,
 				D6FB69B824EFCD150052048D /* IMCustomConverListCell.m in Sources */,
-				D6A041E224F7AE6A001C702D /* WMVideoMessage.m in Sources */,
-				D6B5C66524F7C30F004148B1 /* TZLocationManager.m in Sources */,
-				D6B5C66224F7C30F004148B1 /* TZPhotoPickerController.m in Sources */,
 				D6DE2B6324E2A1A2007502EA /* PersonCenterViewController.m in Sources */,
 				D6B5C66A24F8EA44004148B1 /* IMDataManager+IMConversation.m in Sources */,
 				D623A47824E3E9EB00821194 /* IMConversationViewController.m in Sources */,
@@ -728,14 +584,9 @@
 				D6AF9C4E24CC7F33004343B2 /* IMRootTabbarViewController.m in Sources */,
 				D66B190624CE7530008E0905 /* IMConversationListViewController.m in Sources */,
 				D6AF9CC524CC8067004343B2 /* main.m in Sources */,
-				D6B5C65D24F7C30F004148B1 /* UIView+Layout.m in Sources */,
-				D6B5C65A24F7C30F004148B1 /* TZVideoPlayerController.m in Sources */,
-				D6FB69B524EFCBF40052048D /* IMCustomConversationController.m in Sources */,
-				D6B5C66124F7C30F004148B1 /* TZImageManager.m in Sources */,
 				D683517124D9664100911A77 /* IMIssueController.m in Sources */,
 				D6DE2B6624E3C957007502EA /* IMNavgationController.m in Sources */,
 				D6AF9C4524CC7F33004343B2 /* AppDelegate.m in Sources */,
-				D6A041C924F7AB44001C702D /* WMConversationListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +710,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48T6FRXRV8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RongCloudIMDemo",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RongCloudIMDemo/RongCloudIMDemo.pch";
 				INFOPLIST_FILE = RongCloudIMDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -879,6 +735,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 964Y2DJ896;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/RongCloudIMDemo",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RongCloudIMDemo/RongCloudIMDemo.pch";
 				INFOPLIST_FILE = RongCloudIMDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

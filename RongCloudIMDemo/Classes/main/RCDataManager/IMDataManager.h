@@ -19,14 +19,9 @@
                                     RCIMSendMessageDelegate,
                                     RCIMReceiveMessageDelegate,
                                     RCIMConnectionStatusDelegate>
-/// 融云当前用户 [RCIM ShareRCIM]
-@property(nonatomic,strong)NSString *currentUserInfoID;
 
 /// IMDataManager单例对象
 +(IMDataManager *) shareManager;
-
-
-
 
 
 #pragma mark - IMFUNC

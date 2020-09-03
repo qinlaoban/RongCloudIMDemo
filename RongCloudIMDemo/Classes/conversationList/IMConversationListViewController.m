@@ -9,18 +9,11 @@
 #import "IMConversationListViewController.h"
 #import "IMConversationViewController.h"
 #import "IMDataManager.h"
-#import "IMTestViewController.h"
 #import "RCUserInfo+Addition.h"
 #import "IMSpecialCell.h"
-@interface IMConversationListViewController ()
 
-
-
-@end
 
 @implementation IMConversationListViewController
-
-
 
 - (void)configIMStatus {
 
@@ -59,6 +52,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.showConversationListWhileLogOut = NO;
     RCUserInfo *user = [RCIM sharedRCIM].currentUserInfo;
     self.title = [NSString stringWithFormat:@"%@的会话",user.name];
     
@@ -69,13 +64,12 @@
 }
 
 
+/// 点击cell，拿到cell对应的model，然后从model中拿到对应的RCUserInfo，然后赋值会话属性，进入会话
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType
          conversationModel:(RCConversationModel *)model
                atIndexPath:(NSIndexPath *)indexPath{
-    
-    //点击cell，拿到cell对应的model，然后从model中拿到对应的RCUserInfo，然后赋值会话属性，进入会话
+
     IMConversationViewController *_conversationVC = [[IMConversationViewController alloc]init];
-    // 获取userinfo
     RCUserInfo *aUserInfo = [[IMDataManager shareManager] getUserInfoFromUserId:model.targetId];
     _conversationVC.conversationType = model.conversationType;
    _conversationVC.targetId = model.targetId;
@@ -84,8 +78,6 @@
     [self.navigationController pushViewController:_conversationVC animated:YES];
    
 }
-
-
 
 /// 删除cell
 - (void)didDeleteConversationCell:(RCConversationModel *)model {
@@ -100,56 +92,10 @@
     
 }
 
-//- (NSMutableArray *)willReloadTableData:(NSMutableArray *)dataSource {
-//    NSLog(@"dataSource：%@",dataSource);
-//
-//    RCConversationModel *model = dataSource[0];
-//    RCTextMessage *c = [RCTextMessage messageWithContent:@"huhu"];
-//    model.lastestMessage = c;
-//
-//}
 
-/// 自定cell
 
-//-(NSMutableArray *)willReloadTableData:(NSMutableArray *)dataSource{
-//    for (RCConversationModel *model in dataSource) {
-//        for (RCUserInfo *user in [AppDelegate shareAppDelegate].friendsArray) {
-//            NSLog(@"user type；%@",user.type);
-//            if ([user.type isEqualToString:@"1"]) { // 1 为公务人员
-//                model.conversationModelType = RC_CONVERSATION_MODEL_TYPE_CUSTOMIZATION;
-//            }
-//        }
-//    }
-//    return dataSource;
-//}
-//// 自定义 cell
-//-(RCConversationBaseCell *)rcConversationListTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//      RCConversationModel *model = self.conversationListDataSource[indexPath.row];
-//     RCUserInfo *aUser = [AppDelegate shareAppDelegate].friendsArray[indexPath.row];
-//    if (model.conversationModelType == RC_CONVERSATION_MODEL_TYPE_CUSTOMIZATION && [aUser.type isEqualToString:@"1"]) {
-//
-//        IMSpecialCell *cell = [tableView dequeueReusableCellWithIdentifier:@"special"];
-//        if (cell == nil) {
-//            cell = [[IMSpecialCell alloc]initWithFrame:CGRectMake(0, 0, 400, 90)];
-//        }
-//
-//        [cell setModel:model];
-//
-//        return cell;
-//    }
-//
-//
-//    return  [super rcConversationListTableView:tableView  cellForRowAtIndexPath:indexPath];
-//}
-//// 高度
-//-(CGFloat)rcConversationListTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//     RCConversationModel *model = self.conversationListDataSource[indexPath.row];
-//    if (model.conversationModelType == RC_CONVERSATION_MODEL_TYPE_CUSTOMIZATION) {
-//
-//        return 90;
-//    }
-//    return 44;
-//}
+
+
 
 
 

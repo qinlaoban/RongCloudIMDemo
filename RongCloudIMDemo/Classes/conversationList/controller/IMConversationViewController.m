@@ -15,10 +15,15 @@
 #import "RCCustomMessageCell.h"
 #import "IMRCSettingViewController.h"
 #import <RongSight/RongSight.h>
-#import "TZImagePickerController.h"
+
+
 // 主线程宏
 #define rcd_dispatch_main_async_safe(block) if ([NSThread isMainThread]) { block(); } else { dispatch_async(dispatch_get_main_queue(), block);}
-@interface IMConversationViewController ()<RCMessageCellDelegate,RCSightViewControllerDelegate,RCIMReceiveMessageDelegate,TZImagePickerControllerDelegate>
+@interface IMConversationViewController ()<RCMessageCellDelegate,RCSightViewControllerDelegate,RCIMReceiveMessageDelegate>
+
+
+///
+@property (nonatomic,strong) UIButton *tempBtn;
 
 @end
 
@@ -43,7 +48,15 @@
     
 }
 
-- (void)rightItemDoAction {}
+- (void)rightItemDoAction {
+    
+    
+    _tempBtn.hidden = !_tempBtn.hidden;
+
+    
+ 
+     
+}
 
 - (void)addNotificationCenter {
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -64,8 +77,8 @@
     
     [self registerCustomCell];
     
-
-    
+    [self.chatSessionInputBarControl setCommonPhrasesList:@[@"你好", @"不错", @"是这样", @"没问题", @"谢谢"]];
+ 
 }
 #pragma mark - pluginBoardView
 ///注册自定义视频消息Cell
@@ -235,11 +248,7 @@
     [super didLongTouchMessageCell:model inView:view];
 }
 
-- (void)didTapMessageCell:(RCMessageModel *)model {
-    
-    [super didTapMessageCell:model];
-    
-}
+
 /// 撤回消息
 - (void)onRCIMMessageRecalled:(long)messageId {
     NSLog(@"onRCIMMessageRecalled:%ld",messageId);
@@ -269,15 +278,6 @@
         [super willDisplayMessageCell:cell atIndexPath:indexPath];
     }
 }
-
-
-// 选择视频的回调
--(void)imagePickerController:(TZImagePickerController *)picker
-       didFinishPickingVideo:(UIImage *)coverImage
-                sourceAssets:(PHAsset *)asset{
-    NSLog(@"sourceAssets:%@",asset);
-}
-
 
 
 

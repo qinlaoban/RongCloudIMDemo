@@ -21,15 +21,8 @@
 /** type*/
 @property(nonatomic, strong) NSString *type;
 
-/**
- 
- 指派的初始化方法，根据给定字段初始化实例
- 
 
- @param QQ               QQ
- @param sex             sex
- */
-- (instancetype)initWithUserId:(NSString *)userId name:(NSString *)username portrait:(NSString *)portrait QQ:(NSString *)QQ sex:(NSString *)sex;
 
-- (instancetype)initWithUserId:(NSString *)userId name:(NSString *)username portrait:(NSString *)portrait QQ:(NSString *)QQ sex:(NSString *)sex token:(NSString *)token;
+
+
 @end

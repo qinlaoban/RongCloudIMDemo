@@ -18,5 +18,5 @@
 #import <SVProgressHUD.h>
 #import <RongIMKit/RongIMKit.h>
 #import <SDWebImage.h>
-#import <SGPagingView.h>
+
 #endif /* RCIM_pch */

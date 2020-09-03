@@ -9,6 +9,7 @@
 #import "IMIssue.h"
 #import <AVFoundation/AVFoundation.h>
 #import "IMRCCustomMessage.h"
+#import "IMLoginViewController.h"
 @implementation IMIssue
 
 + (void)getConversationList {
@@ -63,6 +64,8 @@
 }
 
 +(void)refreshUserInfoCache {
+    
+    
     RCUserInfo *userInfo = [[RCUserInfo alloc]initWithUserId:@"1002" name:@"社会人啊。。。" portrait:@"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1990625098,3468619056&fm=11&gp=0.jpg"];
     
     [[RCIM sharedRCIM] refreshUserInfoCache:userInfo withUserId:@"1002"];
@@ -70,14 +73,7 @@
 }
 
 + (void)getCurrentUserId {
-//    NSLog(@"getCurrentUserId:%@",[IMDataManager shareManager].currentUserInfoID);
-//
-//    NSArray * arr = [[RCIMClient sharedRCIMClient] getConversationList:@[@1]];
-//    RCConversation *conversation = arr[0];
-    
-
-    [[RCIMClient sharedRCIMClient] getHistoryMessages:1 targetId:@"1002" oldestMessageId:@"105" count:100];
-
+  [[RCIMClient sharedRCIMClient] getHistoryMessages:1 targetId:@"1002" oldestMessageId:@"105" count:100];
 }
 /// 获取一些视频信息
 +(void)getAVInfo {
@@ -110,13 +106,17 @@
    NSArray *messages = [[RCIMClient sharedRCIMClient] getHistoryMessages:conversationType targetId:@"1001" oldestMessageId:oldestMessageId count:count];
     
   NSArray *latestMessages   =[[RCIMClient sharedRCIMClient] getLatestMessages:1 targetId:@"1001" count:100];
-    
-    
-    NSLog(@"messages:%@",[messages modelToJSONString]);
+  NSLog(@"messages:%@",[messages modelToJSONString]);
     NSLog(@"latestMessages:%@",[latestMessages modelToJSONString]);
+}
+
++ (void)disConneRCServer {
+    [[RCIM sharedRCIM]logout];
     
-
-
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.75 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [AppDelegate shareAppDelegate].window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[IMLoginViewController new]];
+    });
 }
 
 @end

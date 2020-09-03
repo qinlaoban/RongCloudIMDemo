@@ -13,6 +13,12 @@
 #import "IMDataManager.h"
 #import "RCUserInfo+Addition.h"
 #import "AppDelegate.h"
+#import <UserNotifications/UserNotifications.h>
+
+@interface IMDataManager ()
+
+@end
+
 @implementation IMDataManager{
         NSMutableArray *dataSoure;
 }
@@ -86,31 +92,17 @@
 
 
 
-/*!
- 准备发送消息的监听器
 
- */
-- (RCMessageContent *)willSendIMMessage:(RCMessageContent *)messageContent {
-    return messageContent;
-}
+///准备发送消息的监听器
+//- (RCMessageContent *)willSendIMMessage:(RCMessageContent *)messageContent {
+//    return messageContent;
+//}
 
-///*!
-// 发送消息完成的监听器
-// */
+
+/// 发送消息完成的监听器
 //- (void)didSendIMMessage:(RCMessageContent *)messageContent status:(NSInteger)status {
-//    
 //    NSLog(@"didSendIMMessage :%@",[messageContent modelToJSONString]);
 //}
-
-/*!
- 接收消息的回调方法
- */
-//- (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
-////
-//    RCTextMessage *text =(RCTextMessage *) message.content;
-//    text.content = @"哈哈哈";
-//}
-
 
 
 #pragma mark - RCIMConnectionStatusDelegate
@@ -122,15 +114,67 @@
     }
 }
 - (BOOL)onRCIMCustomLocalNotification:(RCMessage *)message withSenderName:(NSString *)senderName{
-    
-    NSLog(@"onRCIMCustomLocalNotification:%@",[message modelToJSONString]);
     return NO;
+    // 创建一个通知内容
+     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+//     content.badge = @1;
+     NSInteger unreadMsgCount = (NSInteger)[[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE)]];
+    content.badge = @(unreadMsgCount);
+     content.title = senderName;
+    NSString *clssName = message.content.className;
+    
+    if ([clssName isEqualToString:@"RCTextMessage"]) {
+        RCTextMessage *textMessage = (RCTextMessage *)message.content;
+        content.subtitle = textMessage.content;
+    }else {
+        content.subtitle = @"其他消息";
+    }
+     
+//     content.body = @"body";
+//     content.sound = [UNNotificationSound defaultSound];
+//     content.categoryIdentifier = @"category";
+//     
+     
+     // 通知触发器
+     UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:false];
+     // 通知请求
+     UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"noti" content:content trigger:trigger];
+     //添加通知
+     [UNUserNotificationCenter.currentNotificationCenter addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+         
+         NSLog(@"error:%@",error);
+     }];
+     
+     
+     // 添加通知的一些操作
+     UNNotificationAction *openAction = [UNNotificationAction actionWithIdentifier:@"open" title:@"打开" options:UNNotificationActionOptionForeground];
+     UNNotificationAction *closeAction = [UNNotificationAction actionWithIdentifier:@"close" title:@"关闭" options:UNNotificationActionOptionDestructive];
+     UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"category" actions:@[openAction, closeAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionCustomDismissAction];
+      
+     NSSet *sets = [NSSet setWithObject:category];
+     [UNUserNotificationCenter.currentNotificationCenter setNotificationCategories:sets];
+    
+    
+    
 }
-
+/// 接收消息的回调方法
 - (void)onRCIMReceiveMessage:(RCMessage *)message left:(int)left {
-    NSLog(@"message.content:%@",[message.content modelToJSONString]);
+   // NSLog(@"message.content:%@",[message.content modelToJSONString]);
+    // 伪需求，禁言，不能打字
+    if (message.conversationType == ConversationType_CHATROOM) {
+        RCTextMessage *textMessage = (RCTextMessage *)message.content;
+        if ([textMessage.extra isEqualToString:@"banned"]) {
+            NSDictionary *object = @{@"targetId":message.targetId};
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"banned" object:object userInfo:object];
+        }
+        
+    }
+    
+    
+    
 }
 - (void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo *))completion{
+    NSLog(@"getUserInfoWithUserId:%@",userId);
     for (RCUserInfo *user in [AppDelegate shareAppDelegate].friendsArray) {
         if ([user.userId isEqualToString:userId]) {
             completion(user);
@@ -145,7 +189,7 @@
     for (NSInteger i = 0; i<[AppDelegate shareAppDelegate].friendsArray.count; i++) {
         RCUserInfo *aUser = [AppDelegate shareAppDelegate].friendsArray[i];
         if ([userId isEqualToString:aUser.userId]) {
-            NSLog(@"current ＝ %@",aUser.name);
+//            NSLog(@"current ＝ %@",aUser.name);
             return aUser;
         }
     }
@@ -155,34 +199,7 @@
 /// 登录融云服务器（connect，用token去连接）
 - (void)loginRongCloudWithUserInfo:(RCUserInfo *)userInfo complete:(nullable void (^)(void))complete{
     
-//    [[RCIM sharedRCIM] connectWithToken:userInfo.token dbOpened:^(RCDBErrorCode code) {
-//
-//    } success:^(NSString *userId) {
-//                    // 登录成功后设置userInfo
-//                    [RCIM sharedRCIM].currentUserInfo = userInfo;
-//
-//                    //同步好友列表
-//                    [self syncFriendList:^(NSMutableArray *friends, BOOL isSuccess) {
-//
-//
-//                    }];
-//                    // 同步群组
-//                    [self syncGroupList:^(NSMutableArray *groups) {
-//
-//                    }];
-//
-//
-//                    [[IMDataManager shareManager] refreshBadgeValue];
-//                    complete();
-//
-//
-//    } error:^(RCConnectErrorCode status) {
-//
-//    } tokenIncorrect:^{
-//
-//    }];
-    
-    
+
 //     连接
     [[RCIM sharedRCIM]connectWithToken:userInfo.token dbOpened:^(RCDBErrorCode code) {
 
@@ -190,8 +207,7 @@
 
         // 登录成功后设置userInfo
         [RCIM sharedRCIM].currentUserInfo = userInfo;
-        self.currentUserInfoID = userInfo.userId;
-
+    
         //同步好友列表
         [self syncFriendList:^(NSMutableArray *friends, BOOL isSuccess) {
 
@@ -219,7 +235,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        NSInteger unreadMsgCount = (NSInteger)[[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION),@(ConversationType_GROUP),@(ConversationType_CHATROOM)]];
+        NSInteger unreadMsgCount = (NSInteger)[[RCIMClient sharedRCIMClient] getUnreadCount:@[@(ConversationType_PRIVATE),@(ConversationType_GROUP),]];
 
         // 会话列表
         UINavigationController  *chatNav = [AppDelegate shareAppDelegate].tabbarVC.viewControllers[0];

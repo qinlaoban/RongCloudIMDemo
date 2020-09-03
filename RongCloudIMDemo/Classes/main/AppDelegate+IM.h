@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (IM)
+
 -(void)initRongClould;
+/// 通知授权
+- (void)registerNotification;
+
 @end
 
 NS_ASSUME_NONNULL_END

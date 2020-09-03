@@ -12,6 +12,7 @@
 #import "IMDataManager.h"
 
 
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
@@ -20,7 +21,8 @@
 @property(nonatomic,retain) NSMutableArray *groupsArray;
 
 
-/// func
+
+///
 + (AppDelegate* )shareAppDelegate;
 @end
 

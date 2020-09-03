@@ -32,6 +32,7 @@
                     @"获取视频信息IM",
                     @"获取本地消息",
                     @"发送自定义文本消息",
+                    @"断开融云连接",
                   
     ];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"issue"];
@@ -75,9 +76,11 @@
             [IMIssue getHistoryMessages:1 targetId:@"110" oldestMessageId:1 count:10];
             break;
             case 7:
-            
             [IMIssue sendCuntomTextMessage];
             break;
+            case 8:
+           [IMIssue disConneRCServer];
+           break;
         default:
             break;
     }
